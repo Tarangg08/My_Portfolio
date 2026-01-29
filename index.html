@@ -3,47 +3,412 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio website using HTML and CSS</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="style_portfolio.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+    <meta name="description" content="Tarang Gupta - Full Stack Web Developer specializing in React.js, .NET Core, and SQL Server. View my portfolio and projects.">
+    <title>Tarang Gupta | Full Stack Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-       <header class = "header">
-        <a href = "#" class="logo">Tarang.</a>
-        <nav class = "navbar">
-           <a href = "#" class="active">HOME</a>
-           <a href = "https://drive.google.com/file/d/1UksAzYgQjtczh8CD-JWxZ5BL33Q2Gl5G/view?usp=sharing">Resume</a>
-           <a href = "about.html">About</a>
-           <a href = "#">Portfolio</a>
-           <a href = "contact.html">Contact</a>
-        </nav>
-        </header>
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-bracket">&lt;</span>Tarang<span class="logo-dot">.</span><span class="logo-bracket">/&gt;</span>
+            </a>
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-        <section class = "home">
-            <div class="home-content">
-            <h1>Hi, I'm Tarang Gupta</h1>
-            <h3>Web Developer</h3>
-            <p><b>Proficient in multiple programming languages
-                and frameworks, with a strong focus on clean
-                code and efficient problem-solving.
-                Collaborative team player with a passion for
-                staying up-to-date with industry trends and
-                continuously enhancing skills.</b></p>
-            <div class ="btn-box"><a href="#">Hire me </a>
-                <a href="#"> Let's Talk</a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="greeting">
+                    <span class="wave">👋</span> Hello, I'm
+                </div>
+                <h1 class="hero-title">
+                    Tarang Gupta
+                </h1>
+                <div class="hero-subtitle">
+                    <span class="typing-text">Full Stack Developer</span>
+                </div>
+                <p class="hero-description">
+                    Passionate about building scalable web applications with modern technologies. 
+                    Specialized in React.js, .NET Core, and SQL Server with a focus on clean code 
+                    and efficient problem-solving.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class='bx bx-envelope'></i>
+                        Hire Me
+                    </a>
+                    <a href="https://drive.google.com/file/d/1UksAzYgQjtczh8CD-JWxZ5BL33Q2Gl5G/view?usp=sharing" target="_blank" class="btn btn-secondary">
+                        <i class='bx bx-download'></i>
+                        Download CV
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/Tarangg08" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tarang-gupta-5748b4217/" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="mailto:guptataranga8@gmail.com" class="social-link" aria-label="Email">
+                        <i class='bx bx-envelope'></i>
+                    </a>
+                    <a href="https://twitter.com/tarang0816" target="_blank" class="social-link" aria-label="Twitter">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                </div>
             </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <div class="floating-card card-1">
+                        <i class='bx bxl-react'></i>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class='bx bxl-javascript'></i>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class='bx bxl-nodejs'></i>
+                    </div>
+                    <div class="floating-card card-4">
+                        <i class='bx bxs-data'></i>
+                    </div>
+                    <img src="developer_illustration.png" alt="Developer Illustration" class="dev-illustration">
+                </div>
             </div>
-            <div class="home-pic">
-                <img src="design_e.png" alt="Tarang Gupta">
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
             </div>
-              <div class = "home-sci">
-                <a href = "https://www.linkedin.com/in/tarang-gupta-5748b4217/"><i class='bx bxl-linkedin'></i></a>
-                <a href = "https://twitter.com/tarang0816"><i class='bx bxl-twitter' ></i></a>
-                <a href = "#"><i class='bx bxl-facebook' ></i></a>
-              </div>
-        </section>
+            <p>Scroll Down</p>
+        </div>
+    </section>
 
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get To Know</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-cards">
+                    <div class="about-card">
+                        <i class='bx bx-code-alt'></i>
+                        <h3>Experience</h3>
+                        <p>2+ Years<br>Full Stack Development</p>
+                    </div>
+                    <div class="about-card">
+                        <i class='bx bx-briefcase'></i>
+                        <h3>Projects</h3>
+                        <p>10+ Completed<br>Web Applications</p>
+                    </div>
+                    <div class="about-card">
+                        <i class='bx bx-award'></i>
+                        <h3>Certifications</h3>
+                        <p>Microsoft & Udemy<br>Certified Developer</p>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>
+                        I'm a <strong>Full Stack Developer</strong> from Bhopal, India, with a strong passion for creating 
+                        efficient and scalable web applications. Currently working as a <strong>Jr. Software Developer at SFA Technologies</strong>, 
+                        I specialize in building full-stack applications using <strong>React.js, .NET Core, and SQL Server</strong>.
+                    </p>
+                    <p>
+                        My expertise includes both client-side and server-side development, with a focus on delivering 
+                        scalable and reliable solutions. I'm proficient in designing efficient SQL Server database architectures 
+                        and implementing intuitive user interfaces with React.js and Tailwind CSS.
+                    </p>
+                    <p>
+                        I hold a <strong>B.Tech in Computer Science and Engineering (CGPA: 8.03)</strong> from Vellore Institute of Technology, 
+                        and I'm constantly learning and staying up-to-date with industry trends to enhance my skills.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Abilities</span>
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class='bx bx-code-curly'></i> Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C/C++</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C#</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class='bx bx-laptop'></i> Frontend Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class='bx bx-server'></i> Backend Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SQL Server</span>
+                        <span class="skill-tag">ASP.NET</span>
+                        <span class="skill-tag">.NET Core</span>
+                        <span class="skill-tag">Web API</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class='bx bx-wrench'></i> Tools & Others</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Jupyter</span>
+                        <span class="skill-tag">Visual Studio</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Virtual Machine</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Journey</span>
+                <h2 class="section-title">Work Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Jr. Software Developer</h3>
+                            <span class="timeline-date">March 2025 - Present</span>
+                        </div>
+                        <h4>SFA Technologies | Bhopal, MP</h4>
+                        <ul>
+                            <li>Engineered and maintained full-stack web applications using <strong>React.js, .NET Core, and SQL Server</strong>, managing both client-side and server-side development to deliver scalable and reliable solutions.</li>
+                            <li>Designed efficient <strong>SQL Server database</strong> architectures and implemented intuitive user interfaces with <strong>React.js and Tailwind CSS</strong>, collaborating with cross-functional teams to ensure seamless end-to-end functionality.</li>
+                            <li>Optimized application performance by streamlining database queries with <strong>C#, TypeScript, and JavaScript</strong>, improving responsiveness and ensuring maintainability of code across the development stack.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>React.js</span>
+                            <span>.NET Core</span>
+                            <span>SQL Server</span>
+                            <span>C#</span>
+                            <span>TypeScript</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class='bx bx-briefcase'></i>
+                        <span class="project-date">Apr 2025 - July 2025</span>
+                    </div>
+                    <h3>Work Management System</h3>
+                    <p class="project-type">Full-Stack Development (React + ASP.NET Core)</p>
+                    <p class="project-description">
+                        Developed a robust web-based platform to streamline task assignment, tracking, and deadline management, 
+                        enhancing organizational productivity and real-time collaboration efforts.
+                    </p>
+                    <ul class="project-features">
+                        <li>Implemented <strong>role-based access control with JWT</strong> authentication</li>
+                        <li>Designed REST APIs in <strong>ASP.NET Core</strong>, integrated <strong>SQL Server</strong> for data storage</li>
+                        <li>Built responsive interface with <strong>React.js</strong> for seamless cross-device functionality</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>React.js</span>
+                        <span>ASP.NET Core</span>
+                        <span>SQL Server</span>
+                        <span>JWT</span>
+                    </div>
+                    <a href="https://github.com/Tarangg08" target="_blank" class="project-link">
+                        <i class='bx bxl-github'></i> View on GitHub
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class='bx bx-leaf'></i>
+                        <span class="project-date">Feb 2024 - May 2024</span>
+                    </div>
+                    <h3>AgriGuard-Plant-Disease-Detection-Technology</h3>
+                    <p class="project-type">Deep Learning</p>
+                    <p class="project-description">
+                        Developed a plant disease detection system using <strong>ResNet50</strong> and the Plant Village dataset 
+                        to accurately identify crop diseases and support efficient crop monitoring.
+                    </p>
+                    <ul class="project-features">
+                        <li>Achieved high accuracy in disease classification</li>
+                        <li>Utilized deep learning with CNN architecture</li>
+                        <li>Processed large-scale agricultural image datasets</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>ResNet50</span>
+                        <span>CNN</span>
+                        <span>Python</span>
+                    </div>
+                    <a href="https://github.com/Tarangg08" target="_blank" class="project-link">
+                        <i class='bx bxl-github'></i> View on GitHub
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class='bx bx-lock'></i>
+                        <span class="project-date">Aug 2022 - Oct 2022</span>
+                    </div>
+                    <h3>Chat-Client-Application-Using-RSA-and-AES-with-Dynamic-S-Box</h3>
+                    <p class="project-type">Cryptographic System</p>
+                    <p class="project-description">
+                        Implemented a secure chat application integrating <strong>RSA</strong> for key exchange and 
+                        <strong>AES</strong> for message encryption, ensuring confidentiality and safe communication.
+                    </p>
+                    <ul class="project-features">
+                        <li>Hybrid encryption system for enhanced security</li>
+                        <li>Dynamic S-Box implementation for AES</li>
+                        <li>Real-time encrypted messaging</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>Java</span>
+                        <span>RSA</span>
+                        <span>AES</span>
+                        <span>Cryptography</span>
+                    </div>
+                    <a href="https://github.com/Tarangg08" target="_blank" class="project-link">
+                        <i class='bx bxl-github'></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class='bx bx-envelope'></i>
+                        <h3>Email</h3>
+                        <a href="mailto:guptataranga8@gmail.com">guptataranga8@gmail.com</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class='bx bx-phone'></i>
+                        <h3>Phone</h3>
+                        <a href="tel:9111980201">9111980201</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class='bx bx-map'></i>
+                        <h3>Location</h3>
+                        <p>Bhopal, Madhya Pradesh, India</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class='bx bxl-github'></i>
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/Tarangg08" target="_blank">github.com/Tarangg08</a>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class='bx bx-send'></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>Tarang<span class="logo-dot">.</span><span class="logo-bracket">/&gt;</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/Tarangg08" target="_blank" aria-label="GitHub">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tarang-gupta-5748b4217/" target="_blank" aria-label="LinkedIn">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="mailto:guptataranga8@gmail.com" aria-label="Email">
+                        <i class='bx bx-envelope'></i>
+                    </a>
+                    <a href="https://twitter.com/tarang0816" target="_blank" aria-label="Twitter">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tarang Gupta. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
